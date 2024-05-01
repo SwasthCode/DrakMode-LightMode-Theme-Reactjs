@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e8eaef;
+    min-height: 100vh;
+    background-color:black ;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  section {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-block: min(20vh, 5rem);
+    text-align: center;
+    width: calc(min(90rem, 90%));
+    margin-inline: auto;
+  }
+  
+  section p,
+  section h2,
+  section h3 {
+    letter-spacing: 0.035rem;
+  }
+  
+  section p {
+    line-height: 1.7;
+    color: #ebe4e4;
+    max-width: 70rem;
+    margin: 0 auto;
+    font-size: clamp(0.9rem, 0.825rem + 0.3vw, 1.2rem);
+  }
+  
+  section h2 {
+    font-size: 55px;
+    color: #f3e8e8;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  
+  section .cards {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    gap: 2rem;
+  }
+  
+  section .card {
+    position: relative;
+    text-align: left;
+  }
+  
+  section .card .social-icon {
+    background: #111;
+    padding: 1rem 1.75rem;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+  }
+  
+  section .card .social-icon i {
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  
+  section .card .social-icon:hover i {
+    color: #003ef5;
+  }
+  
+  section .card img {
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+  }
+  
+  section .card img:hover {
+    filter: grayscale(0%);
+  }
+  
+  section .card .card-content-wrapper {
+    margin-left: auto;
+    max-width: 90%;
+  }
+  
+  section .card .card-content {
+    display: block;
+    background: white;
+    transition: 0.5s ease;
+    padding: 4.5rem 2rem 0 3.2rem;
+  }
+  
+  section .card .card-content > div {
+    text-align: right;
+  }
+  
+  section .card .card-content h3,
+  section .card .card-content p {
+    text-transform: capitalize;
+  }
+  
+  section .card .card-content h3 {
+    font-size: clamp(1.15rem, 1.1071rem + 0.1714vw, 1.3rem);
+    font-weight: 800;
+    color: #111;
+  }
+  
+  section .card .card-content p {
+    color: #454545;
+    font-size: 0.9rem;
+  }
+  
+  section .card .card-content svg {
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+    color: #003ef5;
+  }
+  
